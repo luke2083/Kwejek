@@ -34,7 +34,7 @@ public class AddMemController {
         Mem m = new Mem();
         view.addObject("mem", m);
         view.addObject("comment", new Comment());
-        view.setViewName("/mem/addMem");
+        view.setViewName("/mem/addmem");
         return view;
     }
 
