@@ -40,10 +40,11 @@ public class MemDaoImpl implements MemDao {
     public Mem getRandom() {
         List<Long> list = memDaoCrud.findAllIds();
         int size = list.size();
-
+        System.out.println("Rozmiar: " + size);
         Random r = new Random();
-        long random = r.nextInt(size);
-        Mem m = this.findById(random);
+        int random = r.nextInt(size);
+        System.out.println("Losowy ID: " + random);
+        Mem m = this.findById(list.get(random));
         return m;
     }
 
