@@ -12,7 +12,7 @@ import java.util.*;
  */
 
 @Repository
-@Primary
+
 public class MemDaoImpl implements MemDao {
 
     @Autowired

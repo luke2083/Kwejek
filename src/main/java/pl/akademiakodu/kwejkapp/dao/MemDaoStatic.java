@@ -11,7 +11,7 @@ import java.util.*;
  * Created by luke on 24.06.2017.
  */
 @Repository
-
+@Primary
 public class MemDaoStatic implements MemDao {
 
     private static final List<Mem> MEMS = new ArrayList<>();
