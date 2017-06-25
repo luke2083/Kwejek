@@ -1,5 +1,6 @@
 package pl.akademiakodu.kwejkapp.dao;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import pl.akademiakodu.kwejkapp.entity.Mem;
 
@@ -10,6 +11,7 @@ import java.util.*;
  * Created by luke on 24.06.2017.
  */
 @Repository
+@Primary
 public class MemDaoStatic implements MemDao {
 
     private static final List<Mem> MEMS = new ArrayList<>();
